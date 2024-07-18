@@ -1,0 +1,106 @@
+/* Font */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* sidebar */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #0d6efd;
+    padding-top: 1rem;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: white;
+}
+
+.sidebar .nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link.active {
+    background-color: #044cb8;
+}
+
+.nav-item:hover {
+    background-color: #044cb8;
+}
+
+.main-content {
+    margin-left: 16.666667%;
+    padding: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        /* biar tidak sticky */
+        /* position: absolute; */
+        height: auto;
+        width: 100%;
+        top: 56px;
+        display: none;
+        z-index: 101;
+    }
+
+    .sidebar.show {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .navbar {
+        background-color: #0d6efd;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar img {
+        height: 40px;
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+/* card dashboard */
+.detail-button {
+    cursor: pointer;
+}

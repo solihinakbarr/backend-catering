@@ -1,0 +1,32 @@
+GET http://localhost:5000/menu
+
+###
+POST http://localhost:5000/api/orders/
+
+###
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "menu_id": 1,
+  "name": "John Doe",
+  "phone_number": "1234567890",
+  "address": "123 Main Street",
+  "start_date": "2024-06-25",
+  "end_date": "2024-06-26",
+  "quantity": 2
+}
+
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "M Fikri",
+    "email": "mfikri@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/2
